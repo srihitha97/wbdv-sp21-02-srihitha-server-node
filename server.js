@@ -1,9 +1,12 @@
-require('dotenv').config()
+const dotenv = require('dotenv').config()
 let express = require('express');
 let app = express();
 let bodyParser = require('body-parser')
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
+
+//const password = process.env.PASSWORD
+//const username = process.env.USERNAMEg
 
 const mongoose = require('mongoose');
 const remoteUri = `mongodb+srv://srihitha:gethealthy@cluster0.nm4wb.mongodb.net/whiteboard?retryWrites=true&w=majority`
@@ -30,4 +33,4 @@ require('./controllers/quizzes-controller')(app);
 require('./controllers/question-controller')(app);
 require('./controllers/quiz-attempts-controller')(app);
 
-app.listen(process.env.PORT || 4000);
+app.listen(process.env.PORT || 3001);
