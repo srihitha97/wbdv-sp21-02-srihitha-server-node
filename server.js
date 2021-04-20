@@ -6,7 +6,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 //const password = process.env.PASSWORD
-//const username = process.env.USERNAME
+//const username = process.env.USERNAMEg
 
 const mongoose = require('mongoose');
 const remoteUri = `mongodb+srv://srihitha:gethealthy@cluster0.nm4wb.mongodb.net/whiteboard?retryWrites=true&w=majority`
