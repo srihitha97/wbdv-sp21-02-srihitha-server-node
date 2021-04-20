@@ -1,7 +1,7 @@
 {
   "name": "wbdv-sp21-02-srihitha-server-node",
   "version": "1.0.0",
-  "description": "Sample node server for webdev",
+  "description": "Node server",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,8 +9,9 @@
   "author": "Saisrihitha Yadlapalli",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "express-session": "^1.17.1",
-    "mongoose": "^5.12.4"
+    "mongoose": "^5.12.3"
   }
 }
